@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Navigation Bar</title>
+  </head>
+  <!-- 
+  Use display: inline-block for the list items. (Why?). 
+    list items to be displayed in a horizontal line 
+  i.What’s the difference between the following display values: inline, block, inline-block?
+  -inline: Inline elements do not start on a new line and only take up as much width as necessary.
+  -block: elements take up the full width available, while inline elements only take up as much width as necessary.
+  -inline-block: combines features of both. 
+  -->
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="news.html">News</a></li>
+        <li class="menu">
+          <a href="#">Menu drop-down</a>
+          <ul>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li>
+              <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+            </li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="nature">
+      <h3>Nature</h3>
+      <p>what a beautiful sunrise.</p>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="./images/photo1.png" alt="Photo 1" />
+        <h4>Photo 1</h4>
+        <p>Description of Photo 1</p>
+      </div>
+      <div class="card">
+        <img src="./images/photo2.png" alt="Photo 2" />
+        <h4>Photo 2</h4>
+        <p>Description of Photo 2</p>
+      </div>
+      <div class="card">
+        <img src="./images/photo3.png" alt="Photo 3" />
+        <h4>Photo 3</h4>
+        <p>Description of Photo 3</p>
+      </div>
+      <div class="card">
+        <img src="./images/photo4.png" alt="Photo 4" />
+        <h4>Photo 4</h4>
+        <p>Description of Photo 4</p>
+      </div>
+      <div class="card">
+        <img src="./images/photo5.png" alt="Photo 5" />
+        <h4>Photo 5</h4>
+        <p>Description of Photo 5</p>
+      </div>
+      <div class="card">
+        <img src="./images/photo6.png" alt="Photo 6" />
+        <h4>Photo 6</h4>
+        <p>Description of Photo 6</p>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document.write("Thank YOU");
+  </script>
+</html>

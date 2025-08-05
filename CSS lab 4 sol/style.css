@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(./images/nature.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  height: 100vh;
+}
+
+body:hover {
+  background-color: #a971714c;
+}
+
+nav {
+  background-color: #30342d;
+  position: sticky;
+  width: 100%;
+}
+a:hover {
+  background-color: #63b136;
+}
+a {
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 20px 0;
+}
+
+.nature {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #363131;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nature h3 {
+  color: #fff;
+}
+
+.nature p {
+  color: #ddd;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 20%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu > a {
+  display: block;
+  padding: 12px 16px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu > a:hover {
+  background-color: #444;
+}
+
+.menu ul {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.menu:hover ul {
+  display: block;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px 16px;
+  color: rgb(209, 34, 34);
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  background-color: #555;
+}
