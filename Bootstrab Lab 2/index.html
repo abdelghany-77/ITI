@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Lab 2 Sol</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 1. Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="bi bi-mortarboard-fill me-2"></i>EduLearn
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <section id="home" class="hero-section bg-light py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold text-primary mb-4">
+              Start Learning Today!
+            </h1>
+            <p class="lead mb-4">
+              Discover thousands of courses from expert instructors and advance
+              your skills with our comprehensive online learning platform.
+            </p>
+            <a href="#courses" class="btn btn-primary btn-lg px-4"
+              >Browse Courses</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Course Categories -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Popular Categories</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="text-center p-4 h-100 border rounded shadow-sm">
+              <i class="bi bi-code-slash display-1 text-primary mb-3"></i>
+              <h4>Programming</h4>
+              <p class="text-muted">
+                Learn popular programming languages and frameworks from beginner
+                to advanced level.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center p-4 h-100 border rounded shadow-sm">
+              <i class="bi bi-palette display-1 text-success mb-3"></i>
+              <h4>Design</h4>
+              <p class="text-muted">
+                Master graphic design, UI/UX design, and creative tools to bring
+                your ideas to life.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center p-4 h-100 border rounded shadow-sm">
+              <i class="bi bi-graph-up display-1 text-warning mb-3"></i>
+              <h4>Business</h4>
+              <p class="text-muted">
+                Develop business skills, marketing strategies, and
+                entrepreneurial mindset.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Featured Courses -->
+    <section id="courses" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Featured Courses</h2>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="photos/js.png"
+                class="card-img-top"
+                alt="JavaScript Course"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Complete JavaScript Bootcamp</h5>
+                <p class="card-text flex-grow-1">
+                  Master JavaScript from basics to advanced concepts including
+                  ES6+, DOM manipulation, and modern frameworks.
+                </p>
+                <div class="mt-auto">
+                  <p class="text-muted mb-2">
+                    <i class="bi bi-person-fill"></i> Mohamed
+                  </p>
+                  <a href="#" class="btn btn-primary w-100">Enroll Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="photos/py.png"
+                class="card-img-top"
+                alt="Python Course"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Python for Data Science</h5>
+                <p class="card-text flex-grow-1">
+                  Learn Python programming with focus on data analysis,
+                  visualization, and machine learning libraries.
+                </p>
+                <div class="mt-auto">
+                  <p class="text-muted mb-2">
+                    <i class="bi bi-person-fill"></i> Islam
+                  </p>
+                  <a href="#" class="btn btn-primary w-100">Enroll Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="photos/ui.png"
+                class="card-img-top"
+                alt="UI/UX Course"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">UI/UX Design Masterclass</h5>
+                <p class="card-text flex-grow-1">
+                  Create stunning user interfaces and experiences using
+                  industry-standard design tools and principles.
+                </p>
+                <div class="mt-auto">
+                  <p class="text-muted mb-2">
+                    <i class="bi bi-person-fill"></i> Ahmed
+                  </p>
+                  <a href="#" class="btn btn-primary w-100">Enroll Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Student Testimonials Carousel -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">What Our Students Say</h2>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center">
+                    <img
+                      src="photos/photo.png"
+                      class="rounded-circle mb-3"
+                      alt="Student"
+                    />
+                    <blockquote class="blockquote">
+                      <p class="mb-3">
+                        "The courses are incredibly well-structured and the
+                        instructors are top-notch. I landed my dream job after
+                        completing the JavaScript bootcamp!"
+                      </p>
+                    </blockquote>
+                    <h5>Amanda Miller</h5>
+                    <p class="text-muted">Front-end Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center">
+                    <img
+                      src="photos/photo1.png"
+                      class="rounded-circle mb-3"
+                      alt="Student"
+                    />
+                    <blockquote class="blockquote">
+                      <p class="mb-3">
+                        "EduLearn transformed my career! The Python course
+                        helped me transition into data science. Highly recommend
+                        to anyone looking to upskill."
+                      </p>
+                    </blockquote>
+                    <h5>David Brown</h5>
+                    <p class="text-muted">Data Scientist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center">
+                    <img
+                      src="photos/photo2.png"
+                      class="rounded-circle mb-3"
+                      alt="Student"
+                    />
+                    <blockquote class="blockquote">
+                      <p class="mb-3">
+                        "The UI/UX design course exceeded my expectations. The
+                        hands-on projects and feedback from instructors helped
+                        me build an amazing portfolio."
+                      </p>
+                    </blockquote>
+                    <h5>Lisa Garcia</h5>
+                    <p class="text-muted">UX Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+            aria-label="Previous testimonial"
+          >
+            <span
+              class="carousel-control-prev-icon bg-primary rounded-circle p-3"
+            ></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+            aria-label="Next testimonial"
+          >
+            <span
+              class="carousel-control-next-icon bg-primary rounded-circle p-3"
+            ></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    How long do I have access to a course?
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Once you enroll in a course, you have lifetime access to all
+                    course materials, including future updates and additional
+                    content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    Do you offer certificates upon completion?
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes! Upon successful completion of a course, you'll receive
+                    a certificate of completion that you can add to your
+                    LinkedIn profile or resume.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    Can I learn at my own pace?
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Absolutely! All our courses are self-paced, allowing you to
+                    learn when it's convenient for you. There are no deadlines
+                    or time limits.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                  >
+                    Is there a money-back guarantee?
+                  </button>
+                </h2>
+                <div
+                  id="faq4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    We offer a 30-day money-back guarantee. If you're not
+                    satisfied with your purchase, contact us within 30 days for
+                    a full refund.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer id="contact" class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5 class="mb-3">About EduLearn</h5>
+            <p class="text-light">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+              consectetur sint quasi facilis placeat quibusdam neque, qui sequi
+              suscipit est dolore vitae dicta, accusantium officiis itaque quae,
+              eaque delectus modi!
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-light" aria-label="Facebook"
+                ><i class="bi bi-facebook fs-4"></i
+              ></a>
+              <a href="#" class="text-light" aria-label="Twitter"
+                ><i class="bi bi-twitter fs-4"></i
+              ></a>
+              <a href="#" class="text-light" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin fs-4"></i
+              ></a>
+              <a href="#" class="text-light" aria-label="Instagram"
+                ><i class="bi bi-instagram fs-4"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#home" class="text-light text-decoration-none">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="#courses" class="text-light text-decoration-none"
+                  >Courses</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#about" class="text-light text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="mb-3">Contact Info</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="bi bi-envelope-fill me-2"></i>
+                <a
+                  href="mailto:info@edulearn.com"
+                  class="text-light text-decoration-none"
+                  >info@edulearn.com</a
+                >
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-telephone-fill me-2"></i>
+                <a
+                  href="tel:+1234567890"
+                  class="text-light text-decoration-none"
+                  >+1 (234) 567-8900</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="text-center">
+          <p class="mb-0">&copy; 2025 EduLearn. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
