@@ -6,9 +6,18 @@ const [, , action, ...args] = process.argv;
 
 // ID
 function genId(users) {
-  const maxId =
-    users.length > 0 ? Math.max(...users.map((user) => user.id)) : 0;
-  return maxId + 1;
+  if (users.length === 0) {
+    return 1;
+  }
+
+  let highestId = 0;
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].id > highestId) {
+      highestId = users[i].id;
+    }
+  }
+
+  return highestId + 1;
 }
 
 // save users to file
