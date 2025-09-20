@@ -1,0 +1,19 @@
+{
+  "name": "day2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "node server.js",
+    "cli": "node cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohamed",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "commander": "^14.0.1",
+    "lodash": "^4.17.21"
+  }
+}

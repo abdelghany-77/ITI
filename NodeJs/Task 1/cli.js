@@ -4,7 +4,6 @@ const data = await fs.readFile("./users.json", "utf-8");
 let parsedData = JSON.parse(data);
 const [, , action, ...args] = process.argv;
 
-// ID
 function genId(users) {
   if (users.length === 0) {
     return 1;
@@ -16,7 +15,6 @@ function genId(users) {
       highestId = users[i].id;
     }
   }
-
   return highestId + 1;
 }
 
@@ -34,7 +32,7 @@ async function addUser(name) {
 
   parsedData.push(newUser);
   await saveUsers(parsedData);
-  console.log(`User "${name}" added successfully with ID: ${newUser.id}`);
+  console.log(`added successfully `);
 }
 
 //! Remove user
@@ -45,12 +43,9 @@ async function removeUser(id) {
   if (userIndex === -1) {
     return 0;
   }
-
-  const removedUser = parsedData.splice(userIndex, 1)[0];
+  parsedData.splice(userIndex, 1);
   await saveUsers(parsedData);
-  console.log(
-    `User "${removedUser.Name}" (ID: ${userId}) removed successfully`
-  );
+  console.log(`User removed successfully`);
 }
 
 // Get all users function

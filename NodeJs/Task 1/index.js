@@ -18,10 +18,9 @@ function subtract(numbers) {
   if (numbers.length < 2) {
     return;
   }
-  return numbers.reduce((acc, val, index) => {
-    if (index === 0) return parseInt(val);
+  return numbers.reduce((acc, val) => {
     return acc - parseInt(val);
-  }, 0);
+  });
 }
 
 function multiply(numbers) {
